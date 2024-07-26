@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 861px;
+    background: url(../imagens/background-topo.png);
+    background-size: cover;
+}
+
+.teste {
+    background-color: black;
+}
