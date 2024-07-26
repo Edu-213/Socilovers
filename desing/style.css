@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0px;
     padding: 0;
 }
 
@@ -7,7 +7,42 @@ header {
     height: 793px;
     background: url(../imagens/background-topo.png) no-repeat;
     background-size: contain;
+}
 
+.espacamento {
+    margin: 0 19%;
+}
+
+#conteudo {
+    height: 793px;
+    align-items: center;
+    width: 420px;
+}
+
+#conteudo h1 {
+    padding-top: 200px;
+    padding-bottom: 15px;
+}
+
+#descricao {
+    color: #3F3F3F;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 62px;
+}
+
+.botao {
+    background: linear-gradient(94deg, #007C5F 47.03%, #11AA86 105.09%);
+    gap: 10px;
+    padding: 10px 52px;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 32px;
+    line-height: 54.5px;
 }
 
 .teste {
