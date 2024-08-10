@@ -4,97 +4,44 @@
 }
 
 * {
-    margin: 0px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-    /*border: 1px solid red;*/
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-body {
+body, html {
     font-family: var(--font-family-1);
     overflow-x: hidden;
 }
 
 header {
-    height: 793px;
-    background: url(../imagens/background-topo.png) no-repeat;
-    background-size: contain;
-    display: flex;
-}
-
-/*Animaçao entrada dos texto*/
-.hidden {
-    opacity: 0;
-    filter: blur(15px);
-    transition: all 1s;
-    transform: translateX(-100%);
-}
-
-.show {
-    opacity: 1;
-    filter: blur(0px);
-    transform: translateX(0);
-    transition: all 1s;
-}
-
-.espacamento {
-    margin: 0 19%;
+    background: url('../imagens/background-topo-celular.png') no-repeat;
+    height: 87vh;
 }
 
 #conteudo {
-    height: 300px;
-    align-items: center;
-    width: 529px;
+    padding: 250px 0 0 15px;
 }
 
-#conteudo h1 {
-    padding-top: 200px;
+#conteudo h1 img {
+    width: 220px;
     padding-bottom: 10px;
 }
 
 #descricao {
     color: #3F3F3F;
-    font-size:48px;
-    font-style: normal;
+    font-size: 2em;
     font-weight: 400;
-    line-height: normal;
     padding-bottom: 40px;
-}
 
-/* botão animado */
+}
 
 .btn:link, .btn:visited {
     gap: 10px;
-    padding: 0px 52px;
+    padding: 10px 42px;
     text-decoration: none;
-    position: absolute;
-    transition: all .2s;
     border-radius: 10px;
-    font-size: 32px;
+    font-size: 1.5em;
     line-height: 54.5px;
 }
 
@@ -103,226 +50,103 @@ header {
     color: white;
 }
 
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
 #linha-circulo {
-    position: absolute;
-    top: 22.75em;
-    left: 102.25em
+    display: none;
 }
 
-/*Notificao*/
 .notify {
-    background: rgba(255, 255, 255, 0.50);
-    height: 112px;
-    width: 336px;
-    margin-top: 57px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    filter: blur(0.5px);
+    display: none;
 }
 
-.topo {
-    display: flex;
-}
-
-.topo img {
-    margin: 12.22px 4.22px 10.38px 7.64px;
-    width: 22.145px;
-    height: 22px;
-}
-
-.topo p {
-    padding-top: 17px;
-    font-size: 12px;
-    color: rgba(0, 0, 0, 0.75);
-    font-family: var(--font-family-2);
-    font-weight: 400;
-}
-
-.topo p span {
-    color: black;
-    padding-left: 154px;
-}
-
-.notify-conteudo {
-    font-family: var(--font-family-2);
-    font-size: 12px;
-    padding-left: 13px;
-    color: #2F302E;
-}
-
-.notify-conteudo h3 {
-    font-weight: 700;
-    padding-bottom: 12.53px;
-}
-
-.notify-conteudo p {
-    font-weight: 400;
-}
-
-#position-nitify-1, #position-notify-2, #position-notify-3, #position-notify-4 {
-    position: absolute;
-}
-
-#position-nitify-1 {
-    left: 100.38em;
-    margin-top: 57px;
-}
-
-#position-notify-2 {
-    top: 425px;
-    left: 883px;
-}
-
-#position-notify-3 {
-    top: 645px;
-    left: 1361px;
-}
-
-#position-notify-4 {
-    top: 1380px;
-    left: 270px;
-    z-index: 2;
-}
-
-/*conteudo 2*/
 #conteudo-2 {
     background: #007C5F;
-    width: 100%;
-}
-
-#imagem-conteudo {
-    padding: 126px 0 0 0;
-    display: flex;
+    padding: 126px 0 0 0px;
+    text-align: center;
 }
 
 #imagem-conteudo img {
-    width: 100%;
-    z-index: 1;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+#conteudo-2-text {
+    text-align: left;
+}
 
-#conteudo-text p {
+#conteudo-text {
     color: white;
-    font-size: 45px;
+    font-size: 1.5em;
     font-weight: 700;
-    padding: 143px 320px 31px 30px;
- 
-}
-
-#conteudo-text-2 {
-    color: #232323;
-    line-height: 128.635%;
-    position: relative;
-}
-
-#conteudo-text-2 img {
-    position: absolute;
-    left: -80px;
-    width: 400%;
-}
-
-#conteudo-container h2 {
-    font-size: 40px;
-    font-weight: 700;
-    padding: 47px 0 17px 30px;
+    padding: 20px 0;
+    padding-left: 15px;
 }
 
 #conteudo-container {
-    position: absolute;
+    background-color: orange;
+    padding-left: 15px;
+    color: #232323;
+}
+
+#conteudo-container h2 {
+    font-size: 2em;
+    font-weight: 700;
+    padding: 40px 0 17px 15px;
 }
 
 #conteudo-container p {
-    font-size: 25px;
+    font-size: 1.4em;
     font-weight: 400;
-    padding: 10px 0px 0px 30px;
-    width: 500px;
+    padding: 0 0 42px 0;
 }
-
-
-/* conteudo 3*/
 
 #conteudo-3 {
     background: #007C5F;
-    width: 100%;
-    position: absolute;
 }
 
 #conteudo-text-3 h2 {
     color: white;
-    font-size: 45px;
+    font-size: 2em;
     font-weight: 700;
     line-height: 128.635%;
-    padding: 196px 0px 30px 326px;
-    width: 690px;
-
+    padding: 40px 30px 17px 30px;
 }
 
 #conteudo-text-3 p {
     color: white;
-    font-size: 25px;
+    font-size: 1.2em;
     font-weight: 400;
     line-height: 140%;
-    padding: 0 0 197px 325px;
-    width: 950px;
-    height: 245px;
+    padding: 0 0 10px 15px;
 }
 
 #conteudo-3-imagem {
-    padding: 138px 0px 120px 0px;
-}
-
-#conteudo-3-imagem img {
-    width: 83%;
-}
-
-/*conteudo 4*/
-
-#conteudo-4 {
-    position: relative;
-    top: 785px;
-    left: 0;
-}
-
-#conteudo-4-imagem {
-    position: absolute;
-    top: -200px;
-    left: 1475.5px;
-    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
 }
 
 #conteudo-4-text h2 {
     color: #2E2E2E;
-    font-size: 40px;
+    font-size: 1.3em;
     font-weight: 700;
-    padding: 87px 322px 18px 318px;
+    padding: 40px 0 17px 15px;
 }
 
 #conteudo-4-text p {
     color: #272727;
-    font-size: 25px;
+    font-size: 1.1em;
     font-weight: 400;
     line-height: 140%;
-    padding: 0 320px 57px 320px;
+    padding: 0 0 17px 15px;
 }
 
-#botao a {
-    position: absolute;
-    left: 670px;
-    padding: 0 146.5px 0 146.5px;
+#botao {
     text-align: center;
 }
 
 #botao p {
-    position: absolute;
-    top: 500px;
-    left: 824px;
-    font-size: 20px;
+    font-size: 1em;
     line-height: 140%;
+    padding-bottom: 40px;
 }
 
 #botao p span {
@@ -330,42 +154,402 @@ header {
     font-weight: 800;
 }
 
+#conteudo-4-imagem {
+    display: none;
+}
+
 #rodape {
-    position: absolute;
-    top: 3030px;
-    display: flex;
     background: #007C5F;
-    width: 100%;
+    padding: 20px;
 }
 
 #rodape p {
     color: white;
     line-height: 140%;
     font-weight: 400;
-    padding: 27px 0px 28px 320px;
+    font-size: 0.8em;
 }
 
 #rede-social {
-    padding: 22px 0px 0px 688px;
+    display: none;
 }
 
-#rede-social a img {
-    padding-left: 8px;
+@media only screen and (min-width: 768px) {
+
+    header {
+        background: url('../imagens/background-tablet.png') no-repeat;
+    }
+
+    #conteudo {
+        padding: 250px 0 0 25px;
+    }
+    
+    #conteudo h1 img {
+        width: 270px;
+    }
+    
+    #descricao {
+        font-size: 2.2em;
+        width: 400px;
+    }
+    
+    .btn:link, .btn:visited {
+        padding: 12px 44px;
+        font-size: 1.7em;
+    }
+    
+    #conteudo-text {
+        font-size: 1.8em;
+        padding-left: 25px;
+    }
+    
+    #conteudo-container {
+        padding-left: 25px;
+    }
+    
+    #conteudo-container h2 {
+        font-size: 2.2em;
+    }
+    
+    #conteudo-container p {
+        font-size: 1.6em;
+    }
+    
+    #conteudo-text-3 h2 {
+        font-size: 2.2em;
+    }
+    
+    #conteudo-text-3 p {
+        font-size: 1.4em;
+        padding: 0 0 70px 25px;
+    }
+    
+    #conteudo-3-imagem {
+        padding-bottom: 60px;
+    }
+    
+    #conteudo-4-text h2 {
+        font-size: 1.7em;
+    }
+    
+    #conteudo-4-text p {
+        font-size: 1.3em;
+    }
+
+    #botao {
+        padding-top: 10px;
+    }
+    
+    #botao p {
+        font-size: 1.1em;
+        padding: 10px 0 40px 0;
+    }
+    
+    #rodape {
+        display: flex;
+    }
+    
+    #rodape p {
+        font-size: 1em;
+    }
+
 }
 
+@media only screen and (min-width: 992px) {
+    
+    #rodape p {
+        font-size: 1.1em;
+    }
+}
 
-/*Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+@media only screen and (min-width: 1200px) {
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
+    header {
+        background: url('../imagens/background-topo.png') no-repeat;
+        height: 87vh;
+    }
+    
+    #conteudo {
+        padding: 250px 0 0 350px;
+    }
+    
+    #conteudo h1 img {
+        width: 300px;
+        padding-bottom: 10px;
+    }
+    
+    #descricao {
+        font-size: 2.3em;
+    }
+    
+    .btn:link, .btn:visited {
+        padding: 12px 52px;
+        font-size: 1.7em;
+    }
+    
+    #conteudo-2 {
+        padding: 126px 0 0 0px;
+        text-align: left;
+        display: flex;
+    }
+    
+    #imagem-conteudo img {
+        border-radius: 0 20px 0 0;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.0);
+    }
+    
+    #conteudo-text {
+        font-size: 2.6em;
+        width: 550px;
+        padding: 20px 0 38px 15px;
+    }
+    
+    #conteudo-container h2 {
+        font-size: 2.5em;
+        padding: 40px 0 17px 15px;
+    }
+    
+    #conteudo-container p {
+        font-size: 1.4em;
+        font-weight: 400;
+        padding: 0 0 125.5px 0;
+    }
+    
+    #conteudo-3 {
+        display: flex;
+    }
+    
+    #conteudo-text-3 h2 {
+        font-size: 2.5em;
+        padding: 196px 30px 17px 100px;
+    }
+    
+    #conteudo-text-3 p {
+        font-size: 1.5em;
+        font-weight: 400;
+        line-height: 140%;
+        padding: 0 0 197px 100px;
+    }
+    
+    #conteudo-3-imagem {
+        text-align: center;
+        padding: 138px 0 0 0;
+    }
+    
+    #conteudo-4-text h2 {
+        font-size: 2.2em;
+        padding: 40px 100px 17px 100px;
+    }
+    
+    #conteudo-4-text p {
+        color: #272727;
+        font-size: 1.5em;
+        padding: 10px 100px 17px 100px;
+    }
+    
+    #botao p {
+        font-size: 1.2em;
+    }
+    
+    #rodape {
+        background: #007C5F;
+        padding: 20px;
+    }
+    
+    #rodape p {
+        font-size: 1.2em;
+        padding-right: 52%;
+    }
+    
+    #rede-social {
+        display: contents;
+    }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+    #rede-social a {
+        padding-left: 15px;
+    }
 
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+}
 
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) { ... }
-*/
+@media only screen and (min-width: 1500px) {
+
+    header {
+        background: url('../imagens/background-topo.png') no-repeat;
+    }
+    
+    #conteudo {
+        padding: 250px 0 0 350px;
+    }
+    
+    #conteudo h1 img {
+        width: 300px;
+    }
+    
+    #descricao {
+        font-size: 2.3em;
+    }
+    
+    .btn:link, .btn:visited {
+        padding: 10px 52px;
+        font-size: 1.7em;
+    }
+
+    .btn:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    #linha-circulo {
+        display: contents;
+    }
+
+    #linha-circulo img {
+        position: absolute;
+        top: 22.75em;
+        left: 100.25em
+    }
+    
+    .notify {
+        display: block;
+    }
+
+    .notify {
+        background: rgba(255, 255, 255, 0.50);
+        height: 112px;
+        width: 336px;
+        margin-top: 57px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        filter: blur(0.5px);
+    }
+    
+    .topo {
+        display: flex;
+    }
+    
+    .topo img {
+        margin: 12.22px 4.22px 10.38px 7.64px;
+        width: 22.145px;
+        height: 22px;
+    }
+    
+    .topo p {
+        padding-top: 17px;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.75);
+        font-family: var(--font-family-2);
+        font-weight: 400;
+    }
+    
+    .topo p span {
+        color: black;
+        padding-left: 154px;
+    }
+    
+    .notify-conteudo {
+        font-family: var(--font-family-2);
+        font-size: 12px;
+        padding-left: 13px;
+        color: #2F302E;
+    }
+    
+    .notify-conteudo h3 {
+        font-weight: 700;
+        padding-bottom: 12.53px;
+    }
+    
+    .notify-conteudo p {
+        font-weight: 400;
+    }
+    
+    #position-nitify-1, #position-notify-2, #position-notify-3, #position-notify-4 {
+        position: absolute;
+    }
+    
+    #position-nitify-1 {
+        left: 101.38em;
+        top: 0.1em;
+        margin-top: 57px;
+    }
+    
+    #position-notify-2 {
+        top: 425px;
+        left: 883px;
+    }
+    
+    #position-notify-3 {
+        top: 645px;
+        left: 1361px;
+    }
+    
+    #position-notify-4 {
+        top: 1380px;
+        left: 270px;
+    }
+
+    #conteudo-text {
+        font-size: 2.8em;
+        padding-left: 30px;
+    }
+    
+    #conteudo-container {
+        padding-left: 30px;
+    }
+    
+    #conteudo-container h2 {
+        font-size: 2.5em;
+        padding: 40px 0 17px 15px;
+    }
+    
+    #conteudo-container p {
+        font-size: 1.6em;
+        padding: 0 0 110px 0;
+    }
+    
+    #conteudo-text-3 h2 {
+        font-size: 2.5em;
+        padding-left: 326px;
+        width: 700px;
+    }
+    
+    #conteudo-text-3 p {
+        font-size:1.4em;
+        padding: 0 0 197px 326px;
+        width: 900px;
+    }
+    
+    #conteudo-4-text h2 {
+        font-size: 2.4em;
+        padding: 87px 322px 18px 318px;
+    }
+    
+    #conteudo-4-text p {
+        font-size: 1.5em;
+        padding: 0 322px 57px 318px;
+    }
+    
+    #botao {
+        text-align: center;
+    }
+    
+    #botao p {
+        font-size: 1.2em;
+    }
+    
+    #conteudo-4-imagem {
+        display: block;
+    }
+
+    #conteudo-4-imagem {
+        position: absolute;
+        top: 2170px;
+        left: 1475.5px;
+        width: 100%;
+    }
+    
+    #rodape p {
+        font-size: 1em;
+        padding-left: 320px;
+    }
+    
+}

@@ -5,23 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Socilovers</title>
     <link rel="stylesheet" href="./desing/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <div class="espacamento">
-        <div id="conteudo" class="hidden">
-            <h1><img src="./imagens/Logo.png" alt=""></h1>
-            <p id="descricao">Descubra o segredo para de <strong>destacar nas mídias sociais</strong> com o curso de Social Media do Marcus!</p>
-            <a href="" class="btn btn-color btn-animated">Quero fazer parte</a>
-        </div>
+      <div id="conteudo" class="hidden">
+        <h1><img src="./imagens/Logo.png" alt="" /></h1>
+        <p id="descricao">
+          Descubra o segredo para se
+          <strong>destacar nas mídias sociais</strong> com o curso de Social
+          Media do Marcus!
+        </p>
+        <a href="" class="btn btn-color btn-animated">Quero fazer parte</a>
       </div>
       <div id="linha-circulo">
-        <img src="./imagens/linhas.svg" alt="">
+        <img src="./imagens/linhas.svg" alt="" />
       </div>
-      <div class="notify" id="position-nitify-1">
+      <div class="notify notify2" id="position-nitify-1">
         <div class="topo">
           <img src="./imagens/Nubank.svg" alt="">
           <p>NUBANK <span>há 1 min</span></p>
@@ -52,10 +59,14 @@
         </div>
       </div>
     </header>
-
-    <section id="conteudo-2" class="row">
-      <div id="imagem-conteudo" class="col-6">
-        <img src="./imagens/imagem-2.png" alt="">
+    <section id="conteudo-2">
+      <div id="imagem-conteudo">
+        <picture>
+          <source media="(max-width: 767px )" srcset="./imagens/imagem-2-mobile.png">
+          <source media="(max-width: 1199px)" srcset="./imagens/imagem-2-tablet.png">
+          <source media="(max-width: 1440px)" srcset="./imagens/imagem-2-laptop.png">
+          <img src="./imagens/imagem-2.png" alt="">
+        </picture>
       </div>
       <div class="notify" id="position-notify-4">
         <div class="topo">
@@ -67,12 +78,11 @@
           <p>Você recebeu R$1.526,85 e o valor já está disponível na sua conta! 😊</p>
         </div>
       </div>
-      <div class="col-6">
+      <div id="conteudo-2-text">
         <div id="conteudo-text" class="hidden">
           <p>Está pronto para se tornar um especialista em mídias sociais e conquistar resultados incríveis para você ou sua empresa?</p>
         </div>
-        <div id="conteudo-text-2" class="hidden col-6">
-          <img src="./imagens/Rectangle.png" alt="">
+        <div class="hidden col-6">
           <div id="conteudo-container">
             <h2>E quem vos fala?</h2>
             <p>Marcus, renomado profissional de marketing digital, está aqui para compartilhar seu conhecimento e estratégias com você!</p>
@@ -80,7 +90,7 @@
         </div>
       </div>
     </section>
-
+    
     <section id="conteudo-3" class="row">
       <div class="col-6">
         <div id="conteudo-text-3" class="hidden">
@@ -89,7 +99,11 @@
         </div>
       </div>
       <div id="conteudo-3-imagem" class="col-6">
-        <img src="./imagens/imagem-tv.png" alt="">
+        <picture>
+          <source media="(max-width: 767px )" srcset="./imagens/tv-mobile.png">
+          <source media="(max-width: 1499px)" srcset="./imagens/tv-tablet.png">
+          <img src="./imagens/tv-pc.png" alt="">
+        </picture>
       </div>
     </section>
 
