@@ -26,6 +26,7 @@ header {
     transform: translateX(-100%);
 }
 
+
 .show {
     opacity: 1;
     filter: blur(0px);
