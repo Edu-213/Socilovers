@@ -12,6 +12,7 @@
 body, html {
     font-family: var(--font-family-1);
     overflow-x: hidden;
+    background-color: #0d725a48;
 }
 
 header {
@@ -137,6 +138,10 @@ header {
 #conteudo-3-imagem {
     text-align: center;
     padding-bottom: 50px;
+}
+
+#conteudo-4 {
+    background-color: white;
 }
 
 #conteudo-4-text h2 {
@@ -567,4 +572,36 @@ header {
         padding-left: 320px;
     }
     
+}
+
+@media only screen and (min-width: 1981px) {
+
+    body {
+        margin: 0 7%;
+    }
+
+    .notify {
+        display: none;
+    }
+
+    #linha-circulo {
+        display: none;
+    }
+
+    #conteudo-4-imagem {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 2418px) {
+    body {
+        margin: 0 18%;
+    }
+}
+
+@media only screen and (min-width: 3020px) {
+    body {
+        margin: 0 25%;
+    }
 }
