@@ -16,7 +16,7 @@ body, html {
 }
 
 header {
-    background: url('../imagens/background-topo-celular.png') no-repeat;
+    background: url('../imagens/background-topo-celular.webp') no-repeat;
     height: 87vh;
 }
 
@@ -26,7 +26,6 @@ header {
     transition: all 1s;
     transform: translateX(-100%);
 }
-
 
 .show {
     opacity: 1;
@@ -189,7 +188,7 @@ header {
 @media only screen and (min-width: 768px) {
 
     header {
-        background: url('../imagens/background-tablet.png') no-repeat;
+        background: url('../imagens/background-tablet.webp') no-repeat;
     }
 
     #conteudo {
@@ -277,7 +276,7 @@ header {
 @media only screen and (min-width: 1200px) {
 
     header {
-        background: url('../imagens/background-topo.png') no-repeat;
+        background: url('../imagens/background-topo.webp') no-repeat;
         height: 87vh;
     }
     
@@ -386,7 +385,7 @@ header {
 @media only screen and (min-width: 1500px) {
 
     header {
-        background: url('../imagens/background-topo.png') no-repeat;
+        background: url('../imagens/background-topo.webp') no-repeat;
     }
     
     #conteudo {
@@ -488,5 +487,5 @@ header {
     #conteudo-4-imagem {
         display: none;
     }
-
+    
 }
